@@ -1,0 +1,45 @@
+
+mat-card {
+  background: #ffffff;
+  color: #000;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.text-center{
+  text-align: center;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+mat-nav-list.list-horizontal {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  .mat-list-item {
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+}
+
+.home-card {
+  padding: 2em;
+}

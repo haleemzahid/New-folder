@@ -1,0 +1,37 @@
+<div class="text-center " id="content">
+  <form [formGroup]="loginForm" (ngSubmit)="authenticateUser()" novalidate class="d-flex-center">
+    <div class="authentication-container">
+      <div>
+        <div class="logo-container">
+            <img mat-card-image src="assets/Quantra_logo.png" alt="Quantra">
+        </div>
+        <div class="signin-container text-center mt-top-2">
+          <h3>Signin to <span class="quantr-text">Quantra</span> </h3>
+        </div>
+        <mat-form-field appearance="fill" label="Filled" variant="filled">
+          <mat-label>Email</mat-label>
+          <input matInput  label="Filled" variant="filled" placeholder="pat@example.com" formControlName="email" required>
+        </mat-form-field>
+      </div>
+
+      <div class="mt-top-2">
+          <mat-form-field appearance="fill">
+            <mat-label>Password</mat-label>
+            <input matInput  placeholder="Enter your password"  autoComplete='off' formControlName="password">
+          </mat-form-field>
+      </div>
+        <div class="row">
+          <div class="col">
+            <mat-slide-toggle [color]="color"
+            [checked]="checked"  color="primary">Remember me</mat-slide-toggle>
+          </div>
+          <div class="col">
+            <a class="link" mat-button routerLink="/password-recovery" >Forgot password?</a>
+          </div>
+        </div>
+      <div class="mt-top">
+        <button [disabled]="!loginForm.valid" class="authentication-button"  mat-flat-button disabled color="primary">Sign In</button>
+      </div>
+    </div>
+  </form>
+</div>

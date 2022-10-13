@@ -1,0 +1,91 @@
+.mat-toolbar.mat-primary {
+  background: #fff;
+  color: #fff;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
+  flex-direction: row;
+  white-space: nowrap;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.toolbar-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+}
+
+.toolbar-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.demo-section + .demo-section {
+  margin-top: 16px;
+}
+
+.user-status {
+  position: absolute;
+  margin: 0 auto;
+  padding: 0;
+  top: 2em;
+  float: right;
+  display: flex;
+  right: 1em;
+}
+
+.demo-section {
+  display: flex;
+   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+}
+
+.right-side {
+  color: #b2b2b2;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.right-side div {
+  padding: 0.4em;
+}
+
+.notification {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  top: 0em;
+}
+
+.notification > div {
+  position: absolute;
+    margin: 0 auto;
+    top: -4px;
+    font-size: 0.6em;
+    color: #fff;
+    font-weight: 600;
+    right: 8px;
+}
